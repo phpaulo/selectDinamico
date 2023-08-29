@@ -7,7 +7,13 @@ const anoAtual = evento.getFullYear();
 
 
 const anoAtual = new Date().getFullYear();
-const anos = [anoAtual - 1, anoAtual - 2, anoAtual - 3, anoAtual - 4, anoAtual - 5, anoAtual - 6];
+const anos = [];
+
+for (let ano = 2017; ano <= anoAtual; ano++) {
+  anos.push(ano);
+}
+
+anos.reverse();
 
 function criarOpcoes() {
   for (let ano of anos) {
