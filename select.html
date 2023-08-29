@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de opções dinâmicas em um select</title>
+</head>
+<body>
+  <select id="ano">
+  </select>
+
+  <script>
+    const anos = [2023, 2022, 2021, 2020, 2019];
+
+    function criarOpcoes() {
+      for (let ano of anos) {
+        const option = document.createElement("option");
+        option.textContent = ano;
+        option.value = ano;
+        document.querySelector("#ano").appendChild(option);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", criarOpcoes);
+  </script>
+</body>
+</html>

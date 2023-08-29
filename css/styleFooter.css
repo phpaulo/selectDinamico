@@ -1,0 +1,153 @@
+/* 
+    Created on : 25/11/2021, 14:15:29
+    Author     : Paulo Henrique
+*/
+/* define a cor do incone do facebook */
+#face {
+    color:#114d97
+}
+
+/* define o degradÃª do icone do instagram */
+#insta {
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+-webkit-background-clip: text;
+/* Also define standard property for compatibility */
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 50px; /* change this to change the size*/
+}
+
+/* define a cor do incone do linkedin */
+#linkedin {
+    color:#2867B2
+}
+
+/* efeito de zoom quando passar o mouse sob os incones do facebook e instagram */
+.social-menu i:hover {
+    opacity: .8;                
+    -webkit-transform:scale(1.10); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:scale(1.10); /* Opera */
+    transform:scale(1.10);
+}
+
+/* efeito de zoom e sublinhado nos links */
+.link a:hover {
+    opacity: .8;                
+    text-decoration: underline;
+    font-size: 110%;
+}
+
+/* efeito de zoom e sublinhado no link de copyright */
+.copyright a:hover {
+    opacity: .8;
+    text-decoration: underline;
+    font-size: 105%;
+}
+#img-eqp-ti a:hover {
+    opacity: .9;
+    -webkit-transform:scale(1.10);
+    -moz-transform:scale(1.10);
+    -ms-transform:scale(1.10);
+    -o-transform:scale(1.10);
+    transform:scale(1.10);
+}
+
+/*Apple Store - Google Play Button Code*/
+/*https://codepen.io/chadrex/pen/YmXwrR*/
+.appbs_block {
+    width: 100%;    
+    padding: 1px;
+    /*text-align: left;*/
+    /*border: 2px solid white;*/
+}
+.appbs {
+  color: white;
+  border: 2px solid white;
+  border-radius: 150px;
+  padding: 5px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 5px; 
+  transition: all .1s ease-in-out;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -3px;  
+  /*position: relative;*/
+}
+
+svg {display: block;}
+.appbs:hover {color: #285AEB;background: white;}
+.appbs #appbs_icon {transition: all .1s ease-in-out;}
+.appbs:hover #appbs_icon {fill: #285AEB;}
+.appbs_icon {width: 40px;padding: 7px;box-sizing: border-box;margin-right: 10px;margin-left: 4px;margin-bottom: 3px;}
+.appbs_icon_google {width: 40px;padding: 8px;box-sizing: border-box;margin-right: 10px;margin-left: 4px;}
+.appbs_cont {width: 100px;}
+.appbs_name {font-size: 100%;margin-bottom: 3px;display: block;}
+
+/*Code below test*/
+/*Apple Store - Google Play Button Code*/
+/*
+@font-face{font-family:"Product Sans";src:url("https://cdn.rawgit.com/KompiAjaib/font/master/product-sans-regular.ttf") format("ttf");font-weight:normal;font-style:normal;}
+a.btn-google,a.btn-apple,a.btn-web,a.btn-google:hover,a.btn-apple:hover,a.btn-web:hover{color:#fff}
+.btn{display:inline-block;padding:10px;margin:5px;margin-bottom:25px;font-size:14px;line-height:1.6;border-radius:6px;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;font-weight:500;text-decoration:none}
+.btn:active:focus,.btn:focus{outline:0}
+.btn:focus,.btn:hover{color:#333;text-decoration:none;outline:0}
+.btn:active{outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}
+.btn-google,.btn-apple,.btn-web{color:#fff;background-color:#111;border-color:#000;position:relative;font-family: 'Product Sans', Arial, sans-serif;font-weight:600}
+.btn-google{padding:17px 16px 5px 40px;}
+.btn-apple{padding:17px 22px 5px 40px;}
+.btn-web{padding:17px 22px 5px 50px;}
+.btn-google:focus,.btn-apple:focus,.btn-web:focus{color:#fff;background-color:#555;border-color:#000}
+.btn-google:active,.btn-google:hover,.btn-apple:active,.btn-apple:hover,.btn-web:active,.btn-web:hover{color:#fff;background-color:#555;border-color:#000;}
+.btn-apple:before,.btn-google:before,.btn-web:before{background-size:cover;background-repeat:no-repeat;width:30px;float:left;height:30px;margin-top:-15px;position:absolute}
+.btn-google:before{content:"";background-image:url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);left:6px;top:50%}
+.btn-google:after{content:"Táº£i á»©ng dá»¥ng trÃªn";position:absolute;top:5px;left:40px;font-size:9px;font-weight:400}
+.btn-apple:before{content:"";background-image:url(https://2.bp.blogspot.com/-pfguXOXm3fg/WfbA_JMxnOI/AAAAAAAAtoA/wkc55zw6kZ4cG-S-9K2HVie6RxXRhuvdACLcBGAs/s30/apple.png);left:6px;top:50%}
+.btn-apple:after{content:"Táº£i xuá»‘ng trÃªn";position:absolute;top:5px;left:40px;font-size:9px;font-weight:400}
+.btn-web:before{content:"";background-image:url(https://4.bp.blogspot.com/-pB13GHA2Wjs/W6Nge3sJ23I/AAAAAAAAAFI/N5yZ3L4zONkgHoLQ-Il5Y0o0qhzNFGU0wCLcBGAs/s1600/chrome.png);left:10px;top:50%}
+.btn-web:after{content:"Go to";position:absolute;top:5px;left:50px;font-size:9px;font-weight:400}
+*/
+
+/* botÃµes da play store e apple store 
+.padding {
+    padding: 7rem !important;
+    margin-left: 50px
+}
+
+.intro .buttons a.btn {
+    margin: 10px;
+    padding: 10px 30px
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+    font-weight: 700
+}
+
+.animated h2 {
+    text-align: center;
+    color: #fff
+}
+
+.animated p {
+    text-align: center;
+    color: #fff
+}
+
+.buttons {
+    text-align: center
+}
+*/
